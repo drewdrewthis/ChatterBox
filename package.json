@@ -8,10 +8,17 @@
   },
   "dependencies": {
     "@rails/webpacker": "3.5",
+    "actioncable": "^5.2.0",
+    "apollo-cache-inmemory": "^1.2.1",
+    "apollo-client": "^2.3.1",
+    "apollo-link": "^1.2.2",
+    "apollo-link-http": "^1.5.4",
     "babel-preset-react": "^6.24.1",
+    "graphql-ruby-client": "^1.4.0",
     "lodash": "^4.17.5",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
+    "react-apollo": "^2.1.4",
     "react-dom": "^16.3.2",
     "react_ujs": "^2.4.4"
   },

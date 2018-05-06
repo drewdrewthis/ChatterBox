@@ -6,12 +6,28 @@
 ▾ app/
   ▸ assets/
   ▸ channels/
-  ▸ controllers/
+  ▾ controllers/
+    ▸ concerns/
+      application_controller.rb
+      graphql_controller.rb
+      welcome_controller.rb
+  ▾ graphql/
+    ▾ mutations/
+        .keep
+    ▾ types/
+        .keep
+        conversation_type.rb
+        message_type.rb
+        mutation_type.rb
+        query_type.rb
+        subscription_type.rb
+        user_type.rb
+      chatterbox_schema.rb
   ▸ helpers/
   ▾ javascript/
     ▾ components/
       ▾ App/
-          index.js
+          index.jsx
         .gitkeep
     ▾ packs/
         application.js
@@ -19,7 +35,13 @@
         server_rendering.js
   ▸ jobs/
   ▸ mailers/
-  ▸ models/
+  ▾ models/
+    ▸ concerns/
+      application_record.rb
+      chat.rb
+      coversation.rb
+      message.rb
+      user.rb
   ▾ views/
     ▾ layouts/
         application.html.erb
@@ -43,7 +65,13 @@
     secrets.yml
     spring.rb
     webpacker.yml
-▸ db/
+▾ db/
+  ▾ migrate/
+      20180506134427_create_users.rb
+      20180506134511_create_chats.rb
+      20180506134531_create_coversations.rb
+      20180506134539_create_messages.rb
+    seeds.rb
 ▸ lib/
 ▸ log/
 ▸ node_modules/
@@ -57,6 +85,7 @@
   config.ru
   Gemfile
   Gemfile.lock
+  NERD_tree_2
   package.json
   Rakefile
   README.md

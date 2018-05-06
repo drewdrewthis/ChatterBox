@@ -61,3 +61,4 @@ gem 'graphql', '1.7'
 gem 'graphiql-rails', '1.4.4', group: :development
 gem 'pry-rails'
 gem 'webpacker'
+gem 'rack-cors', :require => 'rack/cors'
