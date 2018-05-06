@@ -1,0 +1,63 @@
+" Press ? for help
+
+.. (up a dir)
+</bongani/apps/ChatterBox/
+▸ .git/
+▾ app/
+  ▸ assets/
+  ▸ channels/
+  ▸ controllers/
+  ▸ helpers/
+  ▾ javascript/
+    ▾ components/
+      ▾ App/
+          index.js
+        .gitkeep
+    ▾ packs/
+        application.js
+        hello_react.jsx
+        server_rendering.js
+  ▸ jobs/
+  ▸ mailers/
+  ▸ models/
+  ▾ views/
+    ▾ layouts/
+        application.html.erb
+        mailer.html.erb
+        mailer.text.erb
+    ▾ welcome/
+        index.html.slim
+▸ bin/
+▾ config/
+  ▸ environments/
+  ▸ initializers/
+  ▸ locales/
+  ▸ webpack/
+    application.rb
+    boot.rb
+    cable.yml
+    database.yml
+    environment.rb
+    puma.rb
+    routes.rb
+    secrets.yml
+    spring.rb
+    webpacker.yml
+▸ db/
+▸ lib/
+▸ log/
+▸ node_modules/
+▸ public/
+▸ test/
+▸ tmp/
+▸ vendor/
+  .babelrc
+  .gitignore
+  .postcssrc.yml
+  config.ru
+  Gemfile
+  Gemfile.lock
+  package.json
+  Rakefile
+  README.md
+  yarn.lock
