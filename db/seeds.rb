@@ -9,7 +9,8 @@ users = User.create([
   {nickname: "Chat Robot"},
   {nickname: "Jill"},
   {nickname: "John"},
-  {nickname: "Joey"}
+  {nickname: "Joey"},
+  {nickname: "Drew"}
 ])
 
 messages = Message.create([
@@ -17,3 +18,5 @@ messages = Message.create([
   {user_id: 4, conversation_id: 1, body: "Hi, Jill! How's it going?"},
   {user_id: 2, conversation_id: 1, body: "Hey! It's going well!"}
 ])
+
+puts User.all

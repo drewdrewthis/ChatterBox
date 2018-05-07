@@ -5,15 +5,19 @@
 ▸ .git/
 ▾ app/
   ▸ assets/
-  ▸ channels/
+  ▾ channels/
+    ▾ application_cable/
+        channel.rb
+        connection.rb
+      graphql_channel.rb
   ▾ controllers/
     ▸ concerns/
       application_controller.rb
       graphql_controller.rb
       welcome_controller.rb
   ▾ graphql/
-    ▾ mutations/
-        .keep
+    ▸ mutations/
+    ▸ resolvers/
     ▾ types/
         .keep
         conversation_type.rb
@@ -24,35 +28,35 @@
         user_type.rb
       chatterbox_schema.rb
   ▸ helpers/
-  ▾ javascript/
-    ▾ components/
-      ▾ App/
-          index.jsx
-        .gitkeep
-    ▾ packs/
-        application.js
-        hello_react.jsx
-        server_rendering.js
+  ▸ javascript/
   ▸ jobs/
   ▸ mailers/
   ▾ models/
     ▸ concerns/
       application_record.rb
       chat.rb
-      coversation.rb
+      conversation.rb
       message.rb
       user.rb
   ▾ views/
-    ▾ layouts/
-        application.html.erb
-        mailer.html.erb
-        mailer.text.erb
-    ▾ welcome/
-        index.html.slim
+    ▸ devise/
+    ▸ layouts/
+    ▸ welcome/
 ▸ bin/
+▾ cable/
+    config.ru
 ▾ config/
   ▸ environments/
-  ▸ initializers/
+  ▾ initializers/
+      application_controller_renderer.rb
+      assets.rb
+      backtrace_silencers.rb
+      cookies_serializer.rb
+      devise.rb
+      filter_parameter_logging.rb
+      inflections.rb
+      mime_types.rb
+      wrap_parameters.rb
   ▸ locales/
   ▸ webpack/
     application.rb
@@ -71,6 +75,8 @@
       20180506134511_create_chats.rb
       20180506134531_create_coversations.rb
       20180506134539_create_messages.rb
+      20180506214629_create_conversations.rb
+    schema.rb
     seeds.rb
 ▸ lib/
 ▸ log/
@@ -89,4 +95,5 @@
   package.json
   Rakefile
   README.md
+  yarn-error.log
   yarn.lock

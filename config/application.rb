@@ -20,5 +20,9 @@ module Chatterbox
         resource '*', :headers => :any, :methods => [:get, :post, :options]
       end
     end
+
+    config.action_cable.allowed_request_origins = '*'
+    config.action_cable.disable_request_forgery_protection = true
+    config.action_cable.mount_path = '/websocket'
   end
 end
