@@ -7,6 +7,11 @@ module ApplicationCable
       self.current_user = find_verified_user
     end
 
+    def disconnect
+      puts @current_user
+      puts 'disconnected'
+    end
+
     private
       def find_verified_user
         current_user = User.find_by(nickname: cookies[:nickname])
