@@ -13,15 +13,16 @@ module ApplicationCable
     end
 
     private
-      def find_verified_user
-        current_user = User.find_by(nickname: cookies[:nickname])
-        puts 'CURRENT USER'
-        puts current_user
-        if current_user
-          current_user
-        else
-          reject_unauthorized_connection
-        end
+
+    def find_verified_user
+      current_user = User.find_by(nickname: cookies[:nickname])
+      puts 'CURRENT USER'
+      puts current_user
+      if current_user
+        current_user
+      else
+        reject_unauthorized_connection
       end
+    end
   end
 end
